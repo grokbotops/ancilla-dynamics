@@ -2,6 +2,7 @@
   "name": "ancilla-dynamics",
   "private": true,
   "description": "Static one-pager for Ancilla Dynamics, LLC",
+  "license": "MIT",
   "scripts": {
     "test": "node test/smoke.js",
     "smoke": "node test/smoke.js"
