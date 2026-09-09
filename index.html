@@ -3,96 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
   <meta name="description" content="Ancilla Dynamics, LLC — professional software and ops consulting for trades businesses.">
   <title>Ancilla Dynamics, LLC</title>
-  <style>
-    :root {
-      --bg: #0f1419;
-      --surface: #1a222c;
-      --text: #e8eef4;
-      --muted: #9aa8b5;
-      --accent: #5b9fd4;
-      --border: #2a3542;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    a { color: var(--accent); }
-    a:hover, a:focus { text-decoration: underline; }
-    header, main, footer {
-      max-width: 40rem;
-      margin: 0 auto;
-      padding: 1.5rem;
-    }
-    header {
-      padding-top: 3rem;
-      border-bottom: 1px solid var(--border);
-    }
-    h1 {
-      font-size: 1.75rem;
-      font-weight: 650;
-      margin: 0 0 0.35rem;
-      letter-spacing: -0.02em;
-    }
-    .tagline { color: var(--muted); margin: 0; font-size: 1.05rem; }
-    section { margin: 2rem 0; }
-    h2 {
-      font-size: 1.1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--muted);
-      margin: 0 0 0.75rem;
-      font-weight: 600;
-    }
-    ul { padding-left: 1.2rem; margin: 0.5rem 0; }
-    li { margin: 0.35rem 0; }
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1.25rem;
-    }
-    footer {
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 0.9rem;
-      padding-bottom: 3rem;
-    }
-    nav { margin-top: 1rem; }
-    nav a { margin-right: 1rem; }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header>
     <h1>Ancilla Dynamics, LLC</h1>
     <p class="tagline">Professional software and ops consulting</p>
     <nav aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-      <a href="privacy/">Privacy</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="privacy/">Privacy</a></li>
+      </ul>
     </nav>
   </header>
-  <main>
+  <main id="main">
     <section id="about" aria-labelledby="about-heading">
       <h2 id="about-heading">About</h2>
       <p>
         Ancilla Dynamics, LLC is a professional software and operations consulting
-        company. We help trades businesses modernize intake, customer relationships,
-        and day-to-day workflow with practical, prepaid engagements.
+        company. We provide prepaid software and ops consulting for trades businesses.
       </p>
     </section>
     <section id="services" aria-labelledby="services-heading">
-      <h2 id="services-heading">What we offer</h2>
+      <h2 id="services-heading">What we sell</h2>
       <div class="card">
         <ul>
           <li>Prepaid software and ops consulting for trades businesses</li>
-          <li>Fixed-price pilots to validate fit before larger work</li>
+          <li>Fixed-price pilots</li>
           <li>Project intake, CRM, and workflow tools</li>
         </ul>
       </div>
@@ -100,17 +43,14 @@
     <section id="contact" aria-labelledby="contact-heading">
       <h2 id="contact-heading">Contact</h2>
       <p>
-        Operations:
+        Email
         <a href="mailto:grokbotops@gmail.com">grokbotops@gmail.com</a>
       </p>
     </section>
   </main>
   <footer>
-    <p>&copy; <span id="y"></span> Ancilla Dynamics, LLC. All rights reserved.</p>
+    <p>&copy; 2026 Ancilla Dynamics, LLC</p>
     <p><a href="privacy/">Privacy</a></p>
   </footer>
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>

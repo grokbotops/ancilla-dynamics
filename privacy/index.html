@@ -3,59 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy policy for Ancilla Dynamics, LLC.">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Privacy policy for Ancilla Dynamics, LLC. This site is a static brochure and does not sell personal information.">
   <title>Privacy — Ancilla Dynamics, LLC</title>
-  <style>
-    :root {
-      --bg: #0f1419;
-      --surface: #1a222c;
-      --text: #e8eef4;
-      --muted: #9aa8b5;
-      --accent: #5b9fd4;
-      --border: #2a3542;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    a { color: var(--accent); }
-    main, header, footer {
-      max-width: 40rem;
-      margin: 0 auto;
-      padding: 1.5rem;
-    }
-    header {
-      padding-top: 3rem;
-      border-bottom: 1px solid var(--border);
-    }
-    h1 { font-size: 1.5rem; margin: 0 0 0.5rem; }
-    .muted { color: var(--muted); margin: 0; }
-    h2 {
-      font-size: 1.05rem;
-      margin: 1.75rem 0 0.5rem;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    footer {
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 0.9rem;
-      padding-bottom: 3rem;
-    }
-  </style>
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header>
     <h1>Privacy</h1>
     <p class="muted">Ancilla Dynamics, LLC</p>
-    <p><a href="../">← Home</a></p>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="./" aria-current="page">Privacy</a></li>
+      </ul>
+    </nav>
   </header>
-  <main>
+  <main id="main" class="policy">
     <p>
       This website is a static brochure for Ancilla Dynamics, LLC. It does not
       require an account and does not ask you to submit personal information
@@ -67,21 +32,34 @@
       Your browser or hosting provider (for example GitHub Pages) may
       automatically process standard technical logs such as IP address, user
       agent, and request timestamps as part of delivering the pages. We do not
-      operate advertising trackers or sell personal information.
+      operate advertising trackers.
+    </p>
+    <h2>Email</h2>
+    <p>
+      If you write to
+      <a href="mailto:grokbotops@gmail.com">grokbotops@gmail.com</a>,
+      we use your email address and the contents of your message to respond
+      and to handle your request.
+    </p>
+    <h2>Payments</h2>
+    <p>
+      This website does not collect payment card numbers. If you purchase
+      services, payment is processed by the payment provider you use
+      (for example, Stripe) under that provider’s terms and privacy policy.
+    </p>
+    <h2>We do not sell personal information</h2>
+    <p>
+      Ancilla Dynamics, LLC does not sell personal information. We do not share
+      email you send us with third parties for their independent marketing.
     </p>
     <h2>Contact</h2>
     <p>
       Privacy questions:
       <a href="mailto:grokbotops@gmail.com">grokbotops@gmail.com</a>
     </p>
-    <h2>Changes</h2>
-    <p>
-      We may update this page from time to time. The current version is always
-      published at this URL.
-    </p>
   </main>
   <footer>
-    <p>&copy; Ancilla Dynamics, LLC</p>
+    <p>&copy; 2026 Ancilla Dynamics, LLC</p>
   </footer>
 </body>
 </html>
