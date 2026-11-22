@@ -34,13 +34,19 @@
       border-bottom: 1px solid var(--border);
     }
     h1 {
-      font-size: 1.75rem;
-      font-weight: 650;
-      margin: 0 0 0.35rem;
-      letter-spacing: -0.02em;
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0;
+      color: var(--muted);
     }
-    .headline { margin: 0.5rem 0 0.35rem; font-size: 1.3rem; font-weight: 600; }
+    .headline {
+      font-size: clamp(1.6rem, 4vw, 2rem);
+      font-weight: 650;
+      margin: 0.6rem 0 0.9rem;
+      text-wrap: balance;
+    }
     .tagline { color: var(--muted); margin: 0; font-size: 1.05rem; }
+    p, .tagline { text-wrap: pretty; }
     section { margin: 2rem 0; }
     h2 {
       font-size: 1.1rem;
@@ -64,8 +70,19 @@
       font-size: 0.9rem;
       padding-bottom: 3rem;
     }
-    nav { margin-top: 1rem; }
-    nav a { margin-right: 1rem; }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      margin-top: 1rem;
+    }
+    nav a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0.6rem 0.25rem;
+      margin-right: 0;
+    }
   </style>
 </head>
 <body>
